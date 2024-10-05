@@ -10,10 +10,3 @@ hambutton.addEventListener('click', () => {
 	hambutton.textContent = hambutton.classList.contains('show') ? 'X' : '☰';
 });
 
-// This display current year in footer
-const currentyear = document.querySelector("#currentyear");
-currentyear.textContent = new Date().getFullYear();
-
-// This display last modified date
-const lastModifiedElement = document.getElementById('lastModified');
-lastModifiedElement.textContent = document.lastModified;

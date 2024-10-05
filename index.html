@@ -1,76 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="WDD 131 - Dynamic Web Fundamentals, Lily Obicheozo"
-    />
-    <link rel="stylesheet" href="./styles/base.css" />
-    <title>WDD 131 - Dynamic Web Fundamentals - Lily Obicheozo Nkeiruka</title>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs/dayjs.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Lily Obicheozo"/>
+    <meta name="author" content="Obicheozo Lily Nkeiruka">
+    <title>WDD 131 - Dynamic Web Fundamentals - Obicheozo Lily Nkeiruka</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div class="parent">
+        <header class="header-contents"> 
+            <h1>WDD 131: Dynamic Web Fundamentals - <span id="span-h1">Obicheozo Lily Nkeiruka</span></h1>                   
+            <nav>
+                <ul class="navigation wrap" aria-label="Navigation menu">
+                    <li><a href="https://www.linkedin.com/in/lily-promise-42b6518b" aria-label="Visit Lily LinkedIn profile" target="_blank">LinkedIn</a></li>
+                    <li><a href=" https://byui.instructure.com" aria-label="Go to BYU-I's I-Learn platform" target="_blank">I-Learn</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/21?lang=eng" aria-label="Read scripture from Revalation 21:3-4" target="_blank">Scripture</a></li>
+                    <li><a href="#" aria-label="View Lily final project" target="_blank">Final Project</a></li>
+                </ul>                   
+            </nav>
+        </header>  
+        <main class="main-content"> 
+            <section class="card">                
+                <h2>About Me</h2>                    
+                <div class="card-content">                        
+                    <div class="about-me">                        
+                        <p>My name is Obicheozo Lily Nkeiruka,I'm From Imo State,Nigeria.
+                          I am the thrid(3) Child out of six sbilings my parent held,
+                          I love listening to music as my lesiure time and i love to read my bible twice every week
+                          which brings me close to my Heavenly Father.</p>
+                        <img src="images/Lily.jpeg" alt="Obicheozo Lily Nkeiruka">                                         
+                    </div>
+                    <div class="card-name">
+                        <h3>Obicheozo Lily Nkeiruka, Nigeria</h3> 
+                    </div>                    
+                    <div class="flag">                        
+                        <figure id="flag">
+                            <img src="images/nigeria-flag.jpg" alt="Country Flag">
+                            <figcaption>Flag of Nigeria</figcaption>
+                        </figure>
+                        <p>Nigeria, the most populous nation on the continent, is a country in West Africa noted for its abundant natural resources, dynamic economy, and diversity of cultures. Nigeria has borders with Benin to the west, Niger to the north, Chad to the northeast, and Cameroon to the east. Its southern coastline runs along the Atlantic Ocean's Gulf of Guinea.</p>                        
+                    </div>                               
+                </div> 
+            </section> 
+            <section class="aside">
+                <div class="aside-content">                    
+                    <h2>Web Dev Resources</h2>                   
+                    <div class="aside-url">
+                        <ul aria-label="list of web development resources">
+                          <li><a href="https://www.w3Schools.com">w3Schools</a></li>
+                          <li><a href="https://www.github.com">Github</a></li>
+                          <li><a href="https://www.vercel.app">Vercel</a></li>
+                          <li><a href="https://stackoverflow.com">Stackoverflow</a></li>
+                        </ul>
+                    </div>                                        
+                </div>
+            </section>
+        </main>        
 
-  </head>
-  <body>
-    <header>
-      <p class="heading">
-        WDD 131 - Dynamic Web Fundamentals -
-        <span>Lily Obicheozo Nkeiruka</span>
-      </p>
-
-      <nav>
-        <a href="https://www.linkedin.com/in/lily-promise-42b6518b" class="link">LinkedIn</a>
-        <a href="https://byui.instructure.com/." class="link">ILearn</a>
-        <a
-          href="https://www.churchofjesuschrist.org/study/scriptures"
-          class="link"
-          >Scripture</a
-        >
-        <a href="" class="">Final Project</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="card card-one">
-        <div class="card-heading">About Me</div>
-        <div class="section-one card-wrapper">
-          <p class="">
-            My name is Obicheozo Lily Nkeiruka,I'm From Imo State,Nigeria.
-            I am the thrid(3) Child out of six sbilings my parent held,
-            I love listening to music as my lesiure time and i love to read my bible twice every week
-            which brings me close to my Heavenly Father.
-          </p>
-          <img
-            class="profile-img"
-            src="images/Lily.jpeg"
-            alt=""
-          />
-        </div>
-      </section>
-
-      <section class="card card-two">
-        <div class="card-heading">Web Dev Resources</div>
-        <div class="card-wrapper">
-          <ul>
-            <li><a href="https://www.w3Schools.com">w3Schools</a></li>
-            <li><a href="https://www.github.com">Github</a></li>
-            <li><a href="https://www.vercel.app">Vercel</a></li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p class="">
-        ©️
-        <span class="current-year"></span>
-        Obicheozo Lily Nkeiruka. Nigeria
-      </p>
-      <p class="lastModified"></p>
-    </footer>
-
-    <script src="./scripts/getdates.js"></script>
-
-  </body>
+        <footer class="footer-contents">
+          <p>&copy;<span id="currentyear"></span> Obicheozo Lily Nkeiruka</p>
+          <p><span id="lastModified"></span></p>
+      </footer>
+    </div>
+    <script src="/script/getdates.js"></script>
+</body>
 </html>
