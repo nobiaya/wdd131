@@ -1,0 +1,49 @@
+@media (min-width: 1000px) {
+    :root {
+        --weather-icon: "⛅";
+      }
+    
+    main{
+        width: 80%;
+    }
+
+    h2 {
+        align-items: center;
+        justify-content: center;        
+    }
+    .container{
+        /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        grid-template-columns: 600px 1fr ;
+        grid-template-rows: auto auto;
+        gap: 3%;
+    }
+    .image{
+        grid-column: 1/2;  
+        grid-row: 1/2  
+    }
+    .data{
+        grid-column: 2/3; 
+        grid-row: 1/2 ;
+        text-align: left;  
+    }
+
+    .data h2 {
+        text-align: left;       
+    }
+    .data li {
+        margin: 0 1rem;
+    }
+    .weather-heading::after {
+        content: var(--weather-icon);
+        color: var(--weather-icon-color);
+        font-size: var(--weather-icon-size);
+        margin-left: 0.5rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .weather figure {
+        display: none;
+    }
+
+}
