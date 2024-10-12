@@ -86,7 +86,6 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/400x250/sao-paulo-brazil-temple-lds-187030-wallpaper.jpg"
     },
     
-
 ];
 
 // Call function for all page
@@ -141,10 +140,10 @@ document.addEventListener("click", (event) => {
 
 
 function createTempleCard(filteredTemples) {
-    // cleaning container before put more elements 
+    // cleaning container before puting more elements 
     document.querySelector(".container").innerHTML = "";
     filteredTemples.forEach(temple => {
-        /* Create html elements */
+        /* Created html elements */
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -152,7 +151,7 @@ function createTempleCard(filteredTemples) {
         let area = document.createElement("p");
         let img = document.createElement("img");
 
-        // Assign string elements
+        // Assigning string elements
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label"> Location: </span> ${temple.location}`;
         dedication.innerHTML = `<span class="label"> Dedicated: </span> ${temple.dedicated}`;
