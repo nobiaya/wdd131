@@ -1,0 +1,174 @@
+
+
+* {
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+
+
+/* ------------ HEADER -------------*/
+header {
+    color: #ffffff;
+    background-color:rgb(4, 53, 77);
+    text-align: center;
+    height: 70px;  
+    
+}
+
+h1{
+    margin-left: 2rem;
+    display: none;
+}
+
+/*  ------------ NAV --------------*/
+
+.hamburger {
+    display: block;
+    position: absolute;
+    width: 100px;
+    margin: 10px;
+    
+}
+/* Estilos para o X */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #57ed93;
+    position: absolute;
+    margin: 0.5rem 7rem  auto;
+    display: none; /* Ocultar inicialmente */
+}
+
+.nav.show .close-btn {
+    display: block; /* Mostrar quando o menu estiver aberto */
+}
+
+
+/* Estilos do hamburger quando ativo */
+.hamburger.active .bar1 {
+    transform: rotate(45deg);
+    top: 10px; /* Ajusta a posição da barra 1 */
+}
+
+.hamburger.active .bar2 {
+    opacity: 0; /* Oculta a barra do meio */
+}
+
+.hamburger.active .bar3 {
+    transform: rotate(-45deg);
+    top: 10px; /* Ajusta a posição da barra 3 */
+}
+
+.bar {
+    height: 4px;
+    width: 30%;
+    background-color:  #ffffff;;
+    margin: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.nav {
+    display: none; /* Inicialmente oculto */
+    background-color: #938BA1;
+    position: absolute;
+    margin-left: 4rem;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    text-align: center;
+ 
+}
+
+.nav ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav a:hover {
+	font-weight: 700;
+	text-decoration: none;
+    color: #57ed93;
+	
+}
+
+.nav.show {
+    display: block; /* Mostra o menu quando ativo */
+    max-width: 300px;
+    
+}
+
+/* ---------- BODY -----------*/
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+section h3 {
+    padding: 1rem;
+}
+
+section{
+    min-height: 100px;
+    background-color: #e6f9f9;
+}
+
+section p{    
+    font-size: 14px;
+}
+
+img { 
+    max-width: 100%; 
+    min-height: 100px;
+    max-width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 50px #898989;
+    border-radius: 300% ;
+    max-width: 80%;
+}
+
+.container{
+    border: 2px solid #e6f9f9;
+    background-color:  #f1fafc;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------- FOOTER -----------*/
+
+#lastModified{
+    color: #57ed93;
+}
+
+footer {
+    flex-direction: column;
+    display: flex;
+    color: white;
+    background-color: rgb(4, 53, 77);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 16px;
+    margin-top: 20px;
+    gap: 8px; 
+}
+
+footer p, footer span {
+    line-height: 1.2; 
+    padding: 0;
+    margin: 0; 
+}
