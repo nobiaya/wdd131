@@ -1,0 +1,228 @@
+/* Colors */
+:root {
+    --primary-color: hsl(34, 90%, 55%);
+    --secondary-color: hsl(210, 36%, 96%);
+    --text-color: hsl(0, 0%, 20%);
+    --warning-color: hsl(0, 90%, 60%);
+    --faded-color: hsl(210, 20%, 90%);
+}
+
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--faded-color);
+}
+
+.hero h2 {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+/* Places Section */
+.places,
+.gallery-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.place-card,
+.gallery-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.image-container {
+    position: relative;
+}
+
+.place-image,
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--warning-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.3rem;
+    opacity: 0.9;
+}
+
+.map-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.map-icon:hover {
+    opacity: 1;
+}
+
+.place-card h3,
+.gallery-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+.explore-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.explore-button:hover {
+    background-color: var(--warning-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Gallery Hero Section */
+.gallery-hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--faded-color);
+}
+
+.gallery-hero h2 {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+}
+
+.gallery-hero p {
+    font-size: 1rem;
+}
+
+.gallery-info {
+    padding: 1rem;
+}
+
+.gallery-info p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* About Hero Section */
+.about-hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--faded-color);
+}
+
+.about-hero h2 {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+}
+
+.about-hero p {
+    font-size: 1rem;
+}
+
+.about-content {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .places,
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .places,
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sight Explorer - Site Plan - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Obicheozo Lily Nkeiruka - Sight Explorer App.">
+    <meta name="author" content="Obicheozo Lily Nkeiruka">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site-explorer-project.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Sight Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section class="hero">
+        <h2>Explore My Adventures</h2>
+        <p>Discover the places I've visited and explore them virtually.</p>
+    </section>
+
+    <section class="places">
+
+        <article class="place-card">
+            <div class="image-container">
+                <img src="images/kano.jpeg" alt="Place 1" class="place-image" loading="lazy">
+                <button class="map-icon" data-location="place1-location">
+                    <img src="images/map-icon.png" alt="Map icon">
+                </button>
+            </div>
+            <h3>Kano State</h3>
+            <button class="explore-button" onclick="location.href='gallery.html'">Explore Now</button>
+        </article>
+
+        <article class="place-card">
+            <div class="image-container">
+                <img src="images/Abia.jpg" alt="Place 2" class="place-image" loading="lazy">
+                <button class="map-icon" data-location="place2-location">
+                    <img src="images/map-icon.png" alt="Map icon">
+                </button>
+            </div>
+            <h3>Abia State</h3>
+            <button class="explore-button" onclick="location.href='gallery.html'">Explore Now</button>
+        </article>
+
+        <article class="place-card">
+            <div class="image-container">
+                <img src="images/lagos.jpg" alt="Place 2" class="place-image" loading="lazy">
+                <button class="map-icon" data-location="place2-location">
+                    <img src="images/map-icon.png" alt="Map icon">
+                </button>
+            </div>
+            <h3>lagos State</h3>
+            <button class="explore-button" onclick="location.href='gallery.html'">Explore Now</button>
+        </article>
+
+    </section>
+</main>
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sight Explorer - Obicheozo Lily Nkeiruka</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>    
+    <script src="../script/getdates.js"></script>
+</body>
+</html>

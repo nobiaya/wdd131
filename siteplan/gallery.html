@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sight Explorer - Gallery Page - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Obicheozo Lily Nkeiruka - Sight Explorer App.">
+    <meta name="author" content="Obicheozo Lily Nkeiruka">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site-explorer-project.css">
+</head>
+<body>
+    <header>
+        <h1>Sight Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-hero">
+            <h2>My Travel Gallery</h2>
+            <p>Explore the memorable places I have visited, with details of each experience.</p>
+        </section>
+
+        <section class="gallery-grid">
+            <article class="gallery-card">
+                <img src="images/Lily.jpeg" alt="Kano State" class="gallery-image">
+                <div class="gallery-info">
+                    <h3>Kano State</h3>
+                    <p>Visited: January 12, 2024 | 10:00 AM</p>
+                    <p>An enriching experience exploring the local culture and landmarks.</p>
+                </div>
+            </article>
+            
+            <article class="gallery-card">
+                <img src="images/Lily.jpeg" alt="Abia State" class="gallery-image">
+                <div class="gallery-info">
+                    <h3>Abia State</h3>
+                    <p>Visited: March 8, 2024 | 3:00 PM</p>
+                    <p>Beautiful landscapes and fascinating historical sites.</p>
+                </div>
+            </article>
+
+            <article class="gallery-card">
+                <img src="images/Lily.jpeg" alt="Abia State" class="gallery-image">
+                <div class="gallery-info">
+                    <h3>Lagos State</h3>
+                    <p>Visited: March 8, 2024 | 3:00 PM</p>
+                    <p>Beautiful landscapes and fascinating historical sites.</p>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sight Explorer - Obicheozo Lily Nkeiruka</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>    
+    <script src="../script/getdates.js"></script>
+
+</body>
+</html>
