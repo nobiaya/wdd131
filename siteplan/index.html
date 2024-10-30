@@ -28,6 +28,11 @@
     <section class="hero">
         <h2>Explore My Adventures</h2>
         <p>Discover the places I've visited and explore them virtually.</p>
+        <form id="userForm">
+            <label for="userName">Enter your name</label>
+            <input type="text" id="userName" name="userName" aria-label="User Name" required>
+            <button type="submit">Save</button>
+        </form>
     </section>
 
     <section class="places">
@@ -35,7 +40,7 @@
         <article class="place-card">
             <div class="image-container">
                 <img src="images/kano.jpeg" alt="Place 1" class="place-image" loading="lazy">
-                <button class="map-icon" data-location="place1-location">
+                <button class="map-icon" data-location="Kano, Nigeria">
                     <img src="images/map-icon.png" alt="Map icon">
                 </button>
             </div>
@@ -46,7 +51,7 @@
         <article class="place-card">
             <div class="image-container">
                 <img src="images/Abia.jpg" alt="Place 2" class="place-image" loading="lazy">
-                <button class="map-icon" data-location="place2-location">
+                <button class="map-icon" data-location="Abia, Nigeria">
                     <img src="images/map-icon.png" alt="Map icon">
                 </button>
             </div>
@@ -57,7 +62,7 @@
         <article class="place-card">
             <div class="image-container">
                 <img src="images/lagos.jpg" alt="Place 2" class="place-image" loading="lazy">
-                <button class="map-icon" data-location="place2-location">
+                <button class="map-icon" data-location="Lagos, Nigeria">
                     <img src="images/map-icon.png" alt="Map icon">
                 </button>
             </div>
@@ -68,11 +73,12 @@
     </section>
 </main>
 
-
     <footer>
         <p>&copy; <span id="currentyear"></span> Sight Explorer - Obicheozo Lily Nkeiruka</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>    
+    
     <script src="../script/getdates.js"></script>
+    <script src="/siteplan/script/project.js"></script>
 </body>
 </html>

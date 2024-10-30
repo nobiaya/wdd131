@@ -3,7 +3,7 @@
     --primary-color: hsl(34, 90%, 55%);
     --secondary-color: hsl(210, 36%, 96%);
     --text-color: hsl(0, 0%, 20%);
-    --warning-color: hsl(0, 90%, 60%);
+    --warning-color: hsl(0, 91%, 30%);
     --faded-color: hsl(210, 20%, 90%);
 }
 
@@ -39,6 +39,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    justify-content: space-evenly;
 }
 
 nav a {
@@ -68,6 +69,47 @@ nav a:hover {
     font-size: 1rem;
 }
 
+/*form input*/
+#userForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 400px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: #f5f5f5; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#userForm label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+#userForm input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#userForm button[type="submit"] {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f49a25; /* Blue background color for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#userForm button[type="submit"]:hover {
+    background-color: #f49a25b6; /* Darker blue on hover */
+}
+
 /* Places Section */
 .places,
 .gallery-grid {
@@ -95,7 +137,7 @@ nav a:hover {
 .place-image,
 .gallery-image {
     width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
 }
 
@@ -109,12 +151,14 @@ nav a:hover {
     border-radius: 50%;
     padding: 0.3rem;
     opacity: 0.9;
+   
 }
 
 .map-icon img {
     width: 24px;
     height: 24px;
 }
+
 
 .map-icon:hover {
     opacity: 1;
@@ -226,3 +270,4 @@ footer {
         font-size: 1.1rem;
     }
 }
+
