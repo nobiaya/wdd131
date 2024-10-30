@@ -1,3 +1,22 @@
+   // Form submission with local storage
+   const userForm = document.getElementById("userForm");
+   userForm.addEventListener("submit", function (event) {
+       event.preventDefault();
+       const userName = document.getElementById("userName").value;
+       if (userName) {
+           localStorage.setItem("userName", userName);
+           alert(`Welcome, ${userName}!`);
+       } else {
+           alert("Please enter your name.");
+       }
+   });
+
+   // Display user name if stored
+   const storedUserName = localStorage.getItem("userName");
+   if (storedUserName) {
+       alert(`Welcome back, ${storedUserName}!`);
+   }
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".map-icon").forEach((button) => {
         button.addEventListener("click", (event) => {
@@ -8,22 +27,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-     // Form submission with local storage
-     const userForm = document.getElementById("userForm");
-     userForm.addEventListener("submit", function (event) {
-         event.preventDefault();
-         const userName = document.getElementById("userName").value;
-         if (userName) {
-             localStorage.setItem("userName", userName);
-             alert(`Welcome, ${userName}!`);
-         } else {
-             alert("Please enter your name.");
-         }
-     });
- 
-     // Display user name if stored
-     const storedUserName = localStorage.getItem("userName");
-     if (storedUserName) {
-         alert(`Welcome back, ${storedUserName}!`);
-     }
+  
 });
